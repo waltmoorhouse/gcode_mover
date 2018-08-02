@@ -52,13 +52,13 @@ except IOError:
     exit(12)
 
 if argNum == 6:
-    x_amount = sys.argv[3]
-    y_amount = sys.argv[4]
-    z_amount = sys.argv[5]
+    x_amount = float(sys.argv[3])
+    y_amount = float(sys.argv[4])
+    z_amount = float(sys.argv[5])
     bk_phrases = ["Meh. You're no fun! Go on across.", "Well, SOMEONE is in a hurry.", "Watch out for Swallows!",
                   "I should install a kiosk and retire.", "Too busy looking at their phones to talk to me. Shameful.",
                   "I get lonely here with just the bridge for company, you know."]
-    print "BRIDGEKEEPER: " + bk_phrases[random.randomint(0, len(bk_phrases))]
+    print "BRIDGEKEEPER: " + bk_phrases[random.randint(0, len(bk_phrases))]
 else:
     print "You go through the now unlocked gate and approach an ancient bridge across a foggy chasm with no discernable bottom."
     print "A withered old bridgekeeper that looks as though he may have started the day they built it approaches you... slowly."
